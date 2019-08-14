@@ -9,7 +9,7 @@ const Login: React.FC = ({ props }: any) => {
   };
 
   return (
-    <form id="container">
+    <form className="container">
       <input type="name" />
       <input type="email" />
       <button onClick={loginUser}>Login</button>
