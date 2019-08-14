@@ -1,5 +1,6 @@
 import React from "react";
 import { navigate } from "hookrouter";
+import "../scss/login.scss";
 
 const Login: React.FC = ({ props }: any) => {
   const loginUser = () => {
@@ -8,7 +9,7 @@ const Login: React.FC = ({ props }: any) => {
   };
 
   return (
-    <form>
+    <form id="container">
       <input type="name" />
       <input type="email" />
       <button onClick={loginUser}>Login</button>

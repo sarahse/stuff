@@ -1,0 +1,38 @@
+#app {
+  min-height: 100vh;
+  display: grid;
+  background: url("../resources/acrylic.jpeg");
+  grid-template-areas:
+    ". header ."
+    ". container ."
+    "footer footer footer";
+  grid-template-rows: 5vh 90vh 5vh;
+  grid-template-columns: 5vw auto 5vw;
+}
+
+#header {
+  grid-area: header;
+  align-self: center;
+  justify-self: center;
+}
+
+#footer {
+  grid-area: footer;
+  align-self: center;
+}
+
+.app {
+  text-align: center;
+}
+
+.credits {
+  text-align: end;
+  padding-right: 2rem;
+}
+
+.app-link {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  justify-content: center;
+}

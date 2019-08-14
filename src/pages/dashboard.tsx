@@ -1,7 +1,8 @@
 import React from "react";
+import "../scss/dashboard.scss";
 
 const Dashboard: React.FC = () => {
-  return <div>Dashboard</div>;
+  return <div id="container">Dashboard</div>;
 };
 
 export default Dashboard;
