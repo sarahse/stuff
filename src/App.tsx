@@ -12,23 +12,25 @@ const App: React.FC = () => {
   const routeResult = useRoutes(Routes);
   return (
     <div className="app" id="app">
-      <div id="menu">
-        <MenuDrawer>
-          <ListItem>
-            <A className="app-link" href="/login">
-              <LoginIcon />
-              Login
-            </A>
-          </ListItem>
-          <ListItem>
-            <A className="app-link" href="/">
-              <HomeIcon />
-              Dashboard
-            </A>
-          </ListItem>
-        </MenuDrawer>
+      <div id="header">
+        <div id="menu">
+          <MenuDrawer>
+            <ListItem>
+              <A className="app-link" href="/login">
+                <LoginIcon />
+                Login
+              </A>
+            </ListItem>
+            <ListItem>
+              <A className="app-link" href="/">
+                <HomeIcon />
+                Dashboard
+              </A>
+            </ListItem>
+          </MenuDrawer>
+        </div>
+        <div id="logo">Logo</div>
       </div>
-      <div id="header">Logo</div>
       <div id="container">{routeResult || <NoPageFound />}</div>
       <div id="footer">
         <div className="credits">
