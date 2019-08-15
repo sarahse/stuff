@@ -3,19 +3,32 @@ import "./scss/app.scss";
 import { useRoutes, A } from "hookrouter";
 import Routes from "./router";
 import NoPageFound from "./pages/noPageFound";
+import MenuDrawer from "./components/menuDrawer";
+import ListItem from "@material-ui/core/ListItem";
+import LoginIcon from "@material-ui/icons/Lock";
+import HomeIcon from "@material-ui/icons/Home";
 
 const App: React.FC = () => {
   const routeResult = useRoutes(Routes);
   return (
     <div className="app" id="app">
-      <div id="header">
-        <A className="app-link" href="/login">
-          Login
-        </A>
-        <A className="app-link" href="/">
-          Dashboard
-        </A>
+      <div id="menu">
+        <MenuDrawer>
+          <ListItem>
+            <A className="app-link" href="/login">
+              <LoginIcon />
+              Login
+            </A>
+          </ListItem>
+          <ListItem>
+            <A className="app-link" href="/">
+              <HomeIcon />
+              Dashboard
+            </A>
+          </ListItem>
+        </MenuDrawer>
       </div>
+      <div id="header">Logo</div>
       <div id="container">{routeResult || <NoPageFound />}</div>
       <div id="footer">
         <div className="credits">
