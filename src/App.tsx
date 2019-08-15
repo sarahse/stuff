@@ -21,6 +21,7 @@ const App: React.FC = () => {
         <div className="credits">
           Background image by{" "}
           <a
+            className="link-text"
             target="_blank"
             href="https://instagyou.online/user/jibarofoto"
             rel="noopener noreferrer"
