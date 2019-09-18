@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const NoPageFound: React.FC = () => {
   return <div>NoPageFound</div>;

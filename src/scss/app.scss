@@ -1,13 +1,13 @@
-@import "./colors.scss";
+@import './colors.scss';
 
 #app {
   min-height: 100vh;
   display: grid;
-  background: url("../resources/acrylic.jpeg");
+  background: url('../resources/acrylic.jpeg');
   grid-template-areas:
-    "header"
-    "container"
-    "footer";
+    'header'
+    'container'
+    'footer';
   grid-template-rows: 5vh auto 5vh;
   box-sizing: border-box;
 }
@@ -16,7 +16,7 @@
   grid-area: header;
   align-self: center;
   display: grid;
-  grid-template-areas: "menu logo .";
+  grid-template-areas: 'menu logo .';
   grid-template-columns: 5vw auto 5vw;
   background-color: white;
   padding-top: 1rem;
